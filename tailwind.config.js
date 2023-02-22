@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: [
+    "./src/**/*.{html,js}",
+  ],
   theme: {
     extend: {},
   },
   plugins: [],
-  purge: {
-    enabled: true,   //  purgeするかどうか
-    content: ['./src/**/*']  // purge対象のファイル
-  },
 }
