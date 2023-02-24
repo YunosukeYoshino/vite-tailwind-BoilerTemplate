@@ -1,6 +1,8 @@
-body {
-    line-height: 1.5;
-    p {
-        font-size: 14px;
-    }
-}
+@use "foundation";
+@use "layout";
+@use "component";
+@use "project";
+@use "utility";
+
+@tailwind components;
+@tailwind utilities;

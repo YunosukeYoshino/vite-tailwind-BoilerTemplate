@@ -1,0 +1,7 @@
+@use "../foundation/" as *;
+
+.l-singlePage {
+  max-width: Rem(900);
+  margin: 0 auto;
+  padding: 0 Rem(20);
+}
