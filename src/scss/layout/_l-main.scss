@@ -1,4 +1,9 @@
-@use "../foundation/" as *;
+/* ----------------------------------
+	Layout
+    main
+------------------------------------ */
+
+@use "../global" as *;
 
 .text {
     // 使う時（min-width）
@@ -16,10 +21,10 @@
     // ここにpc用スタイル
     @include mq(lg, max) {
         // @media screen and (max-width: 1023px)と同じ
-        font-size: rem(20px);
+        font-size: rem(20);
     }
     @include mq(md, max) {
         // @media screen and (max-width: 767px)と同じ
-        font-size: rem(16px);
+        font-size: rem(16);
     }
 }
