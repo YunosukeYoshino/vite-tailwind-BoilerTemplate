@@ -1,0 +1,11 @@
+// --------------------------------------------------
+//  pxをremに変換
+// --------------------------------------------------
+@use "../variable" as *;
+@use "sass:math";
+
+@function rem($px) {
+	$res: math.div($px, $baseFontSize) * 1rem;
+
+	@return $res;
+}

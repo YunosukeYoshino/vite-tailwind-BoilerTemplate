@@ -7,19 +7,20 @@
 
 // pc時非表示
 .u-dn-md-min {
-    @include mq {
-        display: none;
-    }
+	@include mq {
+		display: none;
+	}
 }
 // sp時非表示
 .u-dn-md-max {
-    @include mq(md, max) {
-        display: none;
-    }
+	@include mq(md, max) {
+		display: none;
+	}
 }
 // クリアフィックス
 .u-cf::after {
-    clear: both;
-    content: "";
-    display: block;
+	clear: both;
+	content: "";
+	display: block;
+	@include font(18px, 44, 0.48, 400);
 }

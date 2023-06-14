@@ -1,0 +1,15 @@
+/* ----------------------------------
+	pxのフォントサイズをvw単位に変換
+------------------------------------ */
+@use "size" as *;
+@use "sass:math";
+
+@function pxtovw($value, $device) {
+	@if $device == "pc" {
+		@return math.div($value * 100, widthPc(base)) * 1vw;
+	}
+
+	@if $device == "sp" {
+		@return math.div($value * 100, widthSp(base)) * 1vw;
+	}
+}

@@ -2,10 +2,13 @@
 	Variables 変数を宣言する場所
 ------------------------------------ */
 
+// pxをremに変換
+$baseFontSize: 16px;
+
 //z-indexを定義
 $z-index: (
-    header: 10,
-    modal: 20,
+	header: 10,
+	modal: 20,
 );
 
 // セマンティックな命名

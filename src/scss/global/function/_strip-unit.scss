@@ -1,0 +1,14 @@
+/* ----------------------------------
+ 数値から単位を取り除く
+ math.divなど複数単位が使用できない場合に使用
+------------------------------------ */
+@use "sass:map";
+@use "sass:math";
+
+@function strip-unit($number) {
+  @if type-of($number) == "number" and not unitless($number) {
+    @return math.div($number, $number * 0 + 1);
+  }
+
+  @return $number;
+}

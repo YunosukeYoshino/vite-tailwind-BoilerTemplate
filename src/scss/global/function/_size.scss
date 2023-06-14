@@ -1,0 +1,22 @@
+/* ----------------------------------
+ PC size SP sizeの定義
+------------------------------------ */
+@use "sass:map";
+
+$pc-size: (
+  max: 1400,
+  base: 1280,
+  inner: 1040,
+);
+$sp-size: (
+  base: 390,
+  inner: 305,
+);
+
+@function widthPc($key) {
+  @return map.get($pc-size, $key);
+}
+
+@function widthSp($key) {
+  @return map.get($sp-size, $key);
+}
