@@ -1,0 +1,38 @@
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.min.css"
+	integrity="sha512-U/cZqAAOThvb4J9UCt/DWkkjoJWHXvutFDS/nZmZlirci2ZMuH6qFokOQDuuKgE7pXD+FmhDNH2jT43x0GreCQ=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+/>
+<style>
+	div.code {
+		white-space: pre;
+		overflow: auto;
+	}
+</style>
+
+<div class="code">
+	<pre>
+		<code class="language-html">
+			&lt;details class="c-accordion"&gt;
+				&lt;summary class="c-accordion__header"&gt;
+					&lt;div class="c-accordion__title"&gt;詳しく見る&lt;/div&gt;
+					&lt;div class="c-accordion__plus" /&gt;
+				&lt;/summary&gt;
+				&lt;div class="c-accordion__content"&gt;
+					&lt;p class="c-accordion__text"&gt;アコーディオン内容&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/details&gt;
+		</code>
+	</pre>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+<script>
+	// first, find all the div.code blocks
+	document.querySelectorAll("div.code").forEach((el) => {
+		// then highlight each
+		hljs.highlightElement(el);
+	});
+</script>

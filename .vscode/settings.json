@@ -3,5 +3,8 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll.eslint": true // ファイル保存時に ESLint でフォーマット
 	},
-	"editor.formatOnSave": true //ファイルを保存したタイミングでフォーマットする
+	"editor.formatOnSave": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	} //ファイルを保存したタイミングでフォーマットする
 }
