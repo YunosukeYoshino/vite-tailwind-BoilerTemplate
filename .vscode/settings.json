@@ -6,5 +6,17 @@
 	"editor.formatOnSave": true,
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	} //ファイルを保存したタイミングでフォーマットする
+	},
+	"[css][scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json][jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
