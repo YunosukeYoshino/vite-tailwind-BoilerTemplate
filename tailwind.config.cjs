@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 import plugin from "tailwindcss/plugin";
+import { gridConfig } from "./plugins/grid-config.js";
 
 const button = plugin(function ({ matchComponents, theme }) {
 	matchComponents(
@@ -44,6 +45,17 @@ module.exports = {
 	plugins: [
 		require("tailwindcss-easing"),
 		button,
+		// NOTE auto-fill
+		plugin(({ matchUtilities, theme }) => {
+			matchUtilities(
+				{
+					"grid-cols-auto-fill": (value) => ({
+						gridTemplateColumns: `repeat(auto-fill, minmax(${value}, 1fr))`,
+					}),
+				},
+				{ values: theme("spacing") },
+			);
+		}),
 		plugin(function ({ addComponents }) {
 			addComponents({
 				".btn": {
