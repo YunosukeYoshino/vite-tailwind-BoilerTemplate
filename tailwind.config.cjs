@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
 import plugin from "tailwindcss/plugin";
-import { gridConfig } from "./plugins/grid-config.js";
 
 const button = plugin(function ({ matchComponents, theme }) {
 	matchComponents(
