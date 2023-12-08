@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-const flattenColorPalette = require('tailwindcss/lib/util/flattenColorPalette').default;
-const plugin = require("tailwindcss/plugin");
-
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+import plugin from "tailwindcss/plugin";
 
 const button = plugin(function ({ matchComponents, theme }) {
 	matchComponents(
