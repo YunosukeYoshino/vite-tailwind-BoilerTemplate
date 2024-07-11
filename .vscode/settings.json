@@ -1,8 +1,5 @@
 {
 	"editor.defaultFormatter": "esbenp.prettier-vscode", //VSCodeではPrettierで整形する
-	"editor.codeActionsOnSave": {
-		"source.fixAll.eslint": "explicit"
-	},
 	"editor.formatOnSave": true,
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -11,12 +8,19 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"[typescript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"[json][jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"editor.codeActionsOnSave": {
+		"quickfix.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
 	}
 }

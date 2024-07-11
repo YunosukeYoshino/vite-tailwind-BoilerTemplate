@@ -4,6 +4,7 @@
 		"esbenp.prettier-vscode",
 		"stylelint.vscode-stylelint",
 		"dbaeumer.vscode-eslint",
-		"yusukehirao.vscode-markuplint"
+		"yusukehirao.vscode-markuplint",
+		"biomejs.biome"
 	]
 }
